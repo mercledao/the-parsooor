@@ -1,0 +1,28 @@
+{
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "commands",
+                    "type": "bytes"
+                },
+                {
+                    "internalType": "bytes[]",
+                    "name": "inputs",
+                    "type": "bytes[]"
+                }
+            ],
+            "name": "execute",
+            "outputs": [
+                {
+                    "internalType": "bytes[]",
+                    "name": "outputs",
+                    "type": "bytes[]"
+                }
+            ],
+            "stateMutability": "payable",
+            "type": "function"
+        }
+    ]
+}

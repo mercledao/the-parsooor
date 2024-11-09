@@ -12,5 +12,11 @@ export const protocols: IProtocolDefinitionMap = {
     name: 'Uniswap',
     twitter: 'https://x.com/Uniswap',
     logo: 'https://assets.coingecko.com/coins/images/12504/large/uni.jpg?1600306401'
+  },
+  uniswapv3: {
+    identifier: 'uniswapv3',
+    name: 'Uniswap V3',
+    twitter: 'https://x.com/Uniswap',
+    logo: 'https://assets.coingecko.com/coins/images/12504/large/uni.jpg?1600306401'
   }
 };

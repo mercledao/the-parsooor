@@ -24,6 +24,10 @@ export type ISingleSwapAction = {
    * The recipient of the swap
    */
   recipient?: string;
+  /**
+   * The sender of the swap
+   */
+  sender?: string;
 };
 
 export type IMultiSwapAction = {
@@ -48,6 +52,10 @@ export type IMultiSwapAction = {
    * The recipients of the swaps with the same index as the fromTokens and toTokens
    */
   recipients?: string[];
+  /**
+   * The sender of the swaps
+   */
+  sender?: string;
 };
 
 export type IBridgeInAction = {

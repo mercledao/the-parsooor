@@ -24,20 +24,9 @@ export class UniswapParser {
 
     const parsedTxn = ProtocolHelper.parseTransaction(
       transaction,
-      CONTRACT_ENUM.ROUTER,
+      CONTRACT_ENUM.ROUTER_V2,
       contracts
     );
-
-    console.log('Transaction:', {
-      to: transaction.to,
-      value: transaction.value,
-      data: transaction.data
-    });
-
-    console.log('Parsed transaction:', {
-      name: parsedTxn?.name,
-      args: parsedTxn?.args
-    });
 
     switch (parsedTxn.name) {
       case CONTRACT_FUNCTION_NAMES.SWAP_EXACT_TOKENS_FOR_TOKENS:

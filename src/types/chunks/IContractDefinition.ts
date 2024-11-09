@@ -29,4 +29,6 @@ export type IContractDeployment = {
 export type IContractEventConfig = {
   /** Interface for the event */
   abi: ethers.Interface;
+  /** Optional signature for the event */
+  signature?: string;
 };

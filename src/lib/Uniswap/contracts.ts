@@ -4,7 +4,10 @@ import { IProtocolContractDefinitions } from '../../types';
 import UniswapV2RouterABI from './abis/UniswapV2Router.json';
 
 export enum CONTRACT_ENUM {
-  ROUTER = 'UniswapV2Router02'
+  POOL_V2 = 'PoolV2',
+  ROUTER_V2 = 'RouterV2',
+  POOL_V3 = 'PoolV3',
+  ROUTER_V3 = 'RouterV3'
 }
 
 export enum EVENT_ENUM {
@@ -12,7 +15,7 @@ export enum EVENT_ENUM {
 }
 
 export const contracts: IProtocolContractDefinitions = {
-  [CONTRACT_ENUM.ROUTER]: {
+  [CONTRACT_ENUM.ROUTER_V2]: {
     interface: new ethers.Interface(UniswapV2RouterABI),
     deployments: {
       [CHAIN_ID.ARBITRUM]: {
