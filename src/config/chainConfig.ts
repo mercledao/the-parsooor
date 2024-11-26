@@ -83,4 +83,16 @@ export const chainConfig: IChainDefinitions = {
   [CHAIN_ID.HARMONY]: {
     rpcUrl: process.env.HARMONY_RPC_URL || "https://api.harmony.one",
   },
+  [CHAIN_ID.HECO]: {
+    rpcUrl: process.env.HECO_RPC_URL || "https://http-mainnet.hecochain.com",
+  },
+  [CHAIN_ID.NEON]: {
+    rpcUrl: process.env.NEON_RPC_URL || "https://neon-proxy-mainnet.solana.p2p.org",
+  },
+  [CHAIN_ID.BITROCK]: {
+    rpcUrl: process.env.BITROCK_RPC_URL || "https://connect.bit-rock.io",
+  },
+  [CHAIN_ID.LIGHTLINK]: {
+    rpcUrl: process.env.LIGHTLINK_RPC_URL || "https://replicator.phoenix.lightlink.io/rpc/v1",
+  }
 };

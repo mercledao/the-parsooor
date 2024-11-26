@@ -29,5 +29,12 @@ export const protocols: IProtocolDefinitionMap = {
     logo: "https://storage-mercle-prod.s3.amazonaws.com/public/protocol-logos/odos.png",
     website: "https://www.odos.xyz/",
   },
+  debridge: {
+    identifier: "debridge",
+    name: "DeBridge",
+    twitter: "https://x.com/deBridgeFinance",
+    logo: "https://storage-mercle-prod.s3.amazonaws.com/public/protocol-logos/debridge.png",
+    website: "https://debridge.finance/",
+  }
 };
   

@@ -1,0 +1,151 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "submissionId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "debridgeId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "chainIdFrom",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "autoParams",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isNativeToken",
+                "type": "bool"
+            }
+        ],
+        "name": "Claimed",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "submissionId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "debridgeId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "receiver",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "chainIdTo",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "referralCode",
+                "type": "uint32"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "receivedAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "fixFee",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "transferFee",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "useAssetFee",
+                        "type": "bool"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "isNativeToken",
+                        "type": "bool"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct FeeParams",
+                "name": "feeParams",
+                "type": "tuple"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "autoParams",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "nativeSender",
+                "type": "address"
+            }
+        ],
+        "name": "Sent",
+        "type": "event"
+    }
+]

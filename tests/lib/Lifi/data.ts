@@ -6,6 +6,8 @@ export enum LIFI_VERSIONS {
   V1 = "v1",
 }
 
+export const SOLANA: CHAIN_ID = 1151111081099710 as CHAIN_ID;
+
 export const lifiData: IProtocolTestingData = {
   [LIFI_VERSIONS.V1]: [
     {
@@ -156,7 +158,7 @@ export const lifiData: IProtocolTestingData = {
         {
           type: ACTION_ENUM.BRIDGE_OUT,
           fromChain: CHAIN_ID.ETHEREUM,
-          toChain: CHAIN_ID.SOLANA,
+          toChain: SOLANA,
           fromToken: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           toToken: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           fromAmount: "93171476812",
@@ -192,7 +194,7 @@ export const lifiData: IProtocolTestingData = {
         {
           type: ACTION_ENUM.BRIDGE_OUT,
           fromChain: CHAIN_ID.ETHEREUM,
-          toChain: CHAIN_ID.SOLANA,
+          toChain: SOLANA,
           fromToken: ethers.ZeroAddress,
           toToken: "0x0000000000000000000000000000000000000000",
           fromAmount: "16212840000000000",
@@ -228,7 +230,7 @@ export const lifiData: IProtocolTestingData = {
         {
           type: ACTION_ENUM.BRIDGE_OUT,
           fromChain: CHAIN_ID.ETHEREUM,
-          toChain: CHAIN_ID.SOLANA,
+          toChain: SOLANA,
           fromToken: ethers.ZeroAddress,
           toToken: "0x0000000000000000000000000000000000000000",
           fromAmount: "6808540000000000",
